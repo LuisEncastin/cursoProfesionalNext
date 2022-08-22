@@ -5,6 +5,8 @@ const endPoints = {
   product: {
     paginate: (limit = 10, offset = 1) => `${API}/${VERSION}/products?limit=${limit}&offset=${offset}`,
     getProduct: (id) => `${API}/api/${VERSION}/products/${id}`,
+    getAllProducts: `${API}/api/${VERSION}/products`,
+    // con paginación
     getProducts: (limit, offset) => `${API}/api/${VERSION}/products?limit=${limit}&offset=${offset}`,
     addProducts: `${API}/api/${VERSION}/products/`,
     updateProducts: (id) => `${API}/api/${VERSION}/products/${id}`,
